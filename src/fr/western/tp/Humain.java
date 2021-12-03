@@ -1,16 +1,10 @@
 package fr.western.tp;
 
 public class Humain {
-    private String Nom;
+    private String Nom = "Jonh Doe";
     private String BoissonFavorite = "eau";
 
-    public String getNom() {
-        return Nom;
-    }
-
-    public String getBoissonFavorite() {
-        return BoissonFavorite;
-    }
+    public Humain(){}
 
     public Humain(String nom) {
         this.Nom = nom;
@@ -18,6 +12,14 @@ public class Humain {
     public Humain(String nom, String boissonFavorite) {
         this.Nom = nom;
         this.BoissonFavorite = boissonFavorite;
+    }
+
+    public String getNom() {
+        return Nom;
+    }
+
+    public String getBoissonFavorite() {
+        return BoissonFavorite;
     }
 
     public void parler(String texte) {
