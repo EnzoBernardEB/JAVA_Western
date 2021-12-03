@@ -27,18 +27,18 @@ public class Humain {
     }
 
     public void sePresenter() {
-        System.out.println("Bonjour je suis "+this.getNom()+"et ma boisson préféré c'est -> "+this.getBoissonFavorite());
+        System.out.println("Bonjour je suis "+this.getNom()+" et ma boisson préféré c'est -> "+this.getBoissonFavorite());
     }
 
     public void boire(){
         System.out.println("Ah ! un bon verre de "+this.getBoissonFavorite()+" ! GLOUPS");
     }
 
-    public String DonnerNom(){
+    public String donnerNom(){
         return this.getNom();
     }
 
-    public String DonnerBoissonFavorite() {
+    public String donnerBoissonFavorite() {
         return this.getBoissonFavorite();
     }
 }
